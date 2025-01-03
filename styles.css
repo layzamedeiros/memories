@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fffaa0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color:#B59DE0;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.instruction {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #262525;
+  margin: 10px;
+}
+
+#carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.polaroid img { 
+  margin: 19px 10px 65px 10px;
+  display: block;
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: contain; 
+}
+
+.polaroid {
+  min-width: 100%;
+  height: 400px; 
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center; 
+  scroll-snap-align: center;
+}
+
+#dots {
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #fffaa0;
+}
+
+@media (max-width: 480px) {
+  .polaroid {
+    height: 350px; 
+  }
+  h1 {
+      font-size: 18px;
+  }
+
+  .instruction {
+      font-size: 18px;
+  }
+
+}
+.spotify-player {
+  margin-top: 25px;
+}
