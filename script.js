@@ -8,6 +8,7 @@ carousel.addEventListener('mousedown', (e) => {
     isDragging = true;
     startX = e.pageX - carousel.offsetLeft; // Posição inicial do mouse
     scrollLeft = carousel.scrollLeft; // Posição atual do carrossel
+    carousel.style.transition = 'none';
 });
 
 // Função para quando o usuário estiver arrastando
@@ -22,11 +23,14 @@ carousel.addEventListener('mousemove', (e) => {
 // Função para quando o usuário parar de arrastar
 carousel.addEventListener('mouseup', () => {
     isDragging = false; // Desativa o estado de arraste
+    carousel.style.transition = 'transform 0.5s ease-in-out';
 });
 
 // Função para quando o usuário sair da área do carrossel (em caso de drag fora)
 carousel.addEventListener('mouseleave', () => {
     isDragging = false;
+    carousel.style.transition = 'transform 0.5s ease-in-out';
+
 });
 
 // Função para toque (mobile)
@@ -50,3 +54,4 @@ document.getElementById('play-spotify').addEventListener('click', () => {
     const iframe = document.getElementById('spotify-iframe');
     iframe.src = iframe.src; // Isso força o iframe a recarregar e começar a tocar
 });
+
