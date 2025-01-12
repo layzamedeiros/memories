@@ -15,7 +15,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.137);
   padding: 20px;
   text-align: center;
-  width: 85%;
+  width: 90%;
   max-width: 400px;
   box-sizing: border-box;
 }
@@ -32,7 +32,6 @@ body {
   font-size: 16px;
   color: #262525;
   text-align: center;
-  margin: 10px;
 }
 
 #carousel {
